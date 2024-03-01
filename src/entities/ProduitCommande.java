@@ -3,10 +3,17 @@ package entities;
 public class ProduitCommande {
     private int id;
     private int qteComd;
-    
-    private Commande commande;
+   
     private Produit produit;
+    private Commande commande;
+  
 
+    public ProduitCommande() {
+    }
+    public ProduitCommande(int qteComd, Produit produit) {
+        this.qteComd = qteComd;
+        this.produit = produit;
+    }
     public Commande getCommande() {
         return commande;
     }

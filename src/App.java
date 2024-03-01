@@ -62,9 +62,9 @@ public class App {
                              System.out.println("Entrer la Qte Commande");
                              int QteComd=scanner.nextInt();
                              montant=montant+(QteComd*produit.getPrixUnitaire());
-                             ProduitCommande produitCommande=new ProduitCommande();
-                             produitCommande.setQteComd(QteComd);
-                             produitCommande.setProduit(produit);
+                             ProduitCommande produitCommande=new ProduitCommande(QteComd,produit);
+                             // produitCommande.setQteComd(QteComd);
+                            //  produitCommande.setProduit(produit);
                              commande.getProduitCommandes().add(produitCommande);
 
                           }else{
